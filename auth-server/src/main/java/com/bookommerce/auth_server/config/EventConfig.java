@@ -88,7 +88,7 @@ public class EventConfig {
             log.info("Creating consumer group: [stream={}, group={}]", "resend-account-activation-email-event", "resend-account-activation-email-event-group");
             createConsumerGroupIfNotExists(redisConnectionFactory, "resend-account-activation-email-event", "resend-account-activation-email-event-group");
         };
-    }
+    }+
 
     private void createConsumerGroupIfNotExists(RedisConnectionFactory redisConnectionFactory, String streamKey, String groupName) {
         try {
